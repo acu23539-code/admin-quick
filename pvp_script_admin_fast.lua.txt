@@ -1,0 +1,29 @@
+local Config = { toggles = {}, keybinds = {}, mini = {}, fastPanelPos = nil }
+    return encodeValue({ toggles = Config.toggles, keybinds = Config.keybinds, mini = Config.mini, fastPanelPos = Config.fastPanelPos })
+        if type(data.fastPanelPos) == "table" then Config.fastPanelPos = data.fastPanelPos end
+                    local function _ragdollGetAdminFrames()
+                        local ap = Players.LocalPlayer.PlayerGui:FindFirstChild("AdminPanel")
+                        local panel = ap:FindFirstChild("AdminPanel")
+                    local commandFrame2, profileFrame2 = _ragdollGetAdminFrames()
+    _ragdollGetAdminFrames = function()
+        local ap = Players.LocalPlayer.PlayerGui:FindFirstChild("AdminPanel")
+        local panel = ap:FindFirstChild("AdminPanel")
+        local commandFrame, profileFrame = _ragdollGetAdminFrames()
+    local function getDefenseAdminPanel()
+        local adminPanel = player.PlayerGui:FindFirstChild("AdminPanel")
+        if not adminPanel then return nil, nil end
+        local panel = adminPanel:FindFirstChild("AdminPanel")
+        local commandFrame, profileFrame = getDefenseAdminPanel()
+-- FAST PANEL (Quick Admin)
+    CreateSection(UtilsTab.scroll, "ADMIN")
+    local FP = {}         -- fast panel state
+    -- reuse the ragdoll admin frame helpers already in scope
+    local function fpGetAdminFrames()
+        return _ragdollGetAdminFrames()
+            return Players.LocalPlayer.PlayerGui.AdminPanel.AdminPanel.Content.ScrollingFrame
+        local cmdFrame, profFrame = fpGetAdminFrames()
+        win.Name                   = "FadedFastPanel"
+            local sp = Config.fastPanelPos
+        local titleLbl = Label(hdr, "⚡ Fast Panel", isMobile and 12 or 15, T.White, Enum.Font.GothamBold)
+                    Config.fastPanelPos = { xs = p.X.Scale, xo = p.X.Offset, ys = p.Y.Scale, yo = p.Y.Offset }
+    CreateToggle(UtilsTab.scroll, "Fast Panel", "Quick admin command panel for all players", function(v)
